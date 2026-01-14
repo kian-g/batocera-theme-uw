@@ -1,1 +1,29 @@
+<theme>
+    <formatVersion>7</formatVersion>
 
+    <view name="system">
+        <image name="background" extra="true">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>FF0000</color> </image>
+        
+        <text name="logoText">
+            <fontSize>0.1</fontSize>
+            <color>FFFFFF</color>
+            <forceUppercase>true</forceUppercase>
+        </text>
+    </view>
+
+    <view name="basic, detailed, video, grid">
+        <image name="background" extra="true">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>0000FF</color> </image>
+        
+        <textlist name="gamelist">
+            <selectorColor>FFFFFF40</selectorColor>
+            <selectedColor>FFFFFF</selectedColor>
+            <primaryColor>CCCCCC</primaryColor>
+        </textlist>
+    </view>
+</theme>
