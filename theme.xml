@@ -6,7 +6,7 @@
             extra="true">
             <path>./_assets/uw_logo.png</path>
             <pos>.25 .25</pos>
-            <size>.5 .5</size>
+            <size>.8 .5</size>
             <color>FFFFFFFF</color>
         </image>
         <carousel name="systemcarousel">
