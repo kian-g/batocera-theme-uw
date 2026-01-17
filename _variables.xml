@@ -17,5 +17,7 @@
         <mdImageBlurWhite>./_assets/md_image_blur_white.png</mdImageBlurWhite>
         <sideGradient>./_assets/side_gradient.png</sideGradient>
         <placeholder>./_assets/placeholder.png</placeholder>
+        <outlineBox>./_assets/outline_box.png</outlineBox>
+        <verticalLine>./_assets/vertical_line.png</verticalLine>
     </variables>
 </theme>

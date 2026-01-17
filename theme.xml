@@ -8,16 +8,10 @@
             <type>horizontal</type>
             <!-- Display Off Screen -->
             <pos>2 2</pos>
-            <!-- <size>1 0.35</size>
-            <logoScale>1.2</logoScale>
-            <logoSize>0.22 0.22</logoSize>
-            <maxLogoCount>5</maxLogoCount>
-            <zIndex>50</zIndex> -->
         </carousel>
 
         <text name="systemInfo">
-            <!-- Display Off Screen-->
-            <pos>2 2</pos>
+            <visible>false</visible>
         </text>
 
         <image name="white_background" extra="true">
@@ -42,58 +36,80 @@
             <zIndex>10</zIndex>
             <defaultImage>${placeholder}</defaultImage>
         </image>
+
+        <sound name="bgsound">
+            <path>./_assets/audio/system.mp3</path>
+        </sound>
     </view>
 
-    <view name="gamecarousel">
-
-        <image name="background_color" extra="true">
-            <path>./_assets/white.png</path>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <zIndex>-100</zIndex>
-        </image>
-
-
-        <image name="md_marquee">
+    <view name="detailed">
+        <textlist name="gamelist">
+            <selectorColor>00000000</selectorColor>
+            <selectedColor>b7a57a</selectedColor>
+            <primaryColor>85754d</primaryColor>
             <origin>0 0.5</origin>
-            <pos>.05 .3</pos>
-            <scale>0.8</scale>
-        </image>
+            <pos>0.115 0.49</pos>
+            <size>0.36 0.83</size>
+            <alignment>left</alignment>
+            <fontSize>0.04</fontSize>
+        </textlist>
 
-        <image name="md_image">
-            <origin>0 0</origin>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <zIndex>0</zIndex>
-        </image>
-
-        <image name="side_gradient" extra="true">
-            <origin>0 0</origin>
-            <size>1 1</size>
-            <path>${sideGradient}</path>
-            <color>FFFFFFCA</color>
+        <image name="gold_outline" extra="true">
+            <origin>.5 .5</origin>
+            <size>.8 .85</size>
+            <pos>0.5 .49</pos>
+            <path>${outlineBox}</path>
             <zIndex>10</zIndex>
         </image>
 
-
-        <!-- Prevent default behavior of showing.. hide off screen -->
-        <image name="md_fanart">
-            <pos>2 2</pos>
+        <image name="vertical_line" extra="true">
+            <path>${verticalLine}</path>
+            <origin>0 .5</origin>
+            <pos>.4 .49</pos>
+            <size>0 .85</size>
+            <zIndex>10</zIndex>
         </image>
 
-        <!-- Carousel at bottom of screen -->
-        <gamecarousel name="gamecarousel">
-            <type>horizontal</type>
-            <pos>0 0.68</pos>
-            <size>1 0.25</size>
+        <!-- Game image/video on right -->
+        <video name="md_video">
+            <pos>0.655 0.35</pos>
+            <maxSize>0.45 0.50</maxSize>
+            <origin>0.5 0.5</origin>
+            <delay>1.0</delay>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
+            <zInde>0</zInde>
+        </video>
 
-            <imageType>marquee</imageType>
+        <image name="uw_logo" extra="true">
+            <path>${uwLogo}</path>
+            <maxSize>0.08 0.08</maxSize>
+            <origin>1 1</origin>
+            <pos>.985 .9155</pos>
+        </image>
 
 
-            <logoSize>0.24 0.95</logoSize>
-            <maxLogoCount>4</maxLogoCount>
-            <zIndex>50</zIndex>
-        </gamecarousel>
+        <sound name="bgsound">
+            <path>./_assets/audio/detailed.ogg</path>
+        </sound>
     </view>
 
+    <!-- 
+    <view name="all">
+        <sound name="scrollSound">
+            <path>./_assets/audio/click.wav</path>
+        </sound>
+
+        <sound name="selectSound">
+            <path>./_assets/audio/click.mp3</path>
+        </sound>
+
+        <sound name="backSound">
+            <path>./_assets/audio/cancel.wav</path>
+        </sound>
+
+        <sound name="favoriteSound">
+            <path>./_assets/audio/fav.wav</path>
+        </sound>
+    </view> -->
 </theme>
