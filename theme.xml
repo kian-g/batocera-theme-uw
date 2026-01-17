@@ -5,7 +5,7 @@
         <image name="background"
             extra="true">
             <path>./_assets/uw_logo.png</path>
-            <pos>.25 .25</pos>
+            <pos>0 0</pos>
             <size>.8 .5</size>
             <color>FFFFFFFF</color>
         </image>
