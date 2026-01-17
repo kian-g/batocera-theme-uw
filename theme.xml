@@ -38,11 +38,11 @@
         </image>
 
         <sound name="bgsound">
-            <path>./_assets/audio/system.mp3</path>
+            <path>./_assets/audio/background.mp3</path>
         </sound>
     </view>
 
-    <view name="detailed">
+    <view name="detailed, video">
         <textlist name="gamelist">
             <selectorColor>00000000</selectorColor>
             <selectedColor>b7a57a</selectedColor>
@@ -78,7 +78,8 @@
             <delay>1.0</delay>
             <showSnapshotNoVideo>true</showSnapshotNoVideo>
             <showSnapshotDelay>true</showSnapshotDelay>
-            <zInde>0</zInde>
+            <zIndex>0</zIndex>
+            <audio>false</audio>
         </video>
 
         <image name="uw_logo" extra="true">
@@ -89,9 +90,6 @@
         </image>
 
 
-        <sound name="bgsound">
-            <path>./_assets/audio/detailed.ogg</path>
-        </sound>
     </view>
 
     <!-- 
