@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
     <formatVersion>7</formatVersion>
+    <include>./_variables.xml</include>
 
     <!-- System Selection View (c64, pcengine, megadrive etc.) -->
     <view name="system">
@@ -18,4 +19,19 @@
 
     </view>
 
+    <!--Detail
+    View (Game Details, etc.)-->
+    <view name="detailed">
+        <textlist name="gamelist">
+            <origin>1 0.5</origin>
+            <pos>0.98 0.5</pos>
+            <size>0.4 0.85</size>
+
+
+            <selectedColor>${gold}</selectedColor>
+            <selectorColor>${transparent}</selectorColor>
+
+            <alignment>right</alignment>
+        </textlist>
+    </view>
 </theme>

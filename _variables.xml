@@ -1,0 +1,14 @@
+<theme>
+    <variables>
+        <!-- https://www.washington.edu/brand/brand-elements/fonts/ -->
+
+        <!-- Fonts -->
+        <fontRegular>./_fonts/Fontfabric-UniSansRegular.otf</fontRegular>
+
+        <!--Colors-->
+        <purple>32006e</purple>
+        <purpleLight>4b2e83</purpleLight>
+        <gold>ffc700</gold>
+        <transparent>FFFFFF00</transparent>
+    </variables>
+</theme>
