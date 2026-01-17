@@ -24,6 +24,7 @@
             <fontSize>0.05</fontSize>
             <color>FFFFFFFF</color>
             <alignment>center</alignment>
+            <fontPath>./_assets/fonts/BuenosAiresNf-RAJE.ttf</fontPath>
         </text>
     </view>
 </theme>
