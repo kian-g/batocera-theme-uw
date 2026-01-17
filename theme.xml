@@ -5,8 +5,8 @@
         <image name="background"
             extra="true">
             <path>./_assets/uw_logo.png</path>
-            <pos>.5 .5</pos>
-            <size>1 1</size>
+            <pos>.25 .25</pos>
+            <size>.5 .5</size>
             <color>FFFFFFFF</color>
         </image>
         <carousel name="systemcarousel">
@@ -26,19 +26,5 @@
             <color>FFFFFFFF</color>
             <alignment>center</alignment>
         </text>
-    </view>
-    <view name="basic, detailed, video, grid">
-        <image name="background"
-            extra="true">
-            <path>./_assets/white.png</path>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <color>0000FFFF</color>
-        </image>
-        <textlist name="gamelist">
-            <selectorColor>FFFFFF40</selectorColor>
-            <selectedColor>FFFFFFFF</selectedColor>
-            <primaryColor>CCCCCCFF</primaryColor>
-        </textlist>
     </view>
 </theme>
