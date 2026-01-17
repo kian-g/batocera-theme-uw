@@ -19,9 +19,16 @@
 
     </view>
 
-    <!--Detail
-    View (Game Details, etc.)-->
+    <!-- Detail View (Game Details, etc.)-->
     <view name="detailed">
+        <image name="background_color" extra="true">
+            <path>./_assets/white.png</path>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>-100</zIndex>
+        </image>
+
+        <!-- Game List-->
         <textlist name="gamelist">
             <origin>1 0.5</origin>
             <pos>0.98 0.5</pos>
@@ -33,5 +40,20 @@
 
             <alignment>right</alignment>
         </textlist>
+
+        <image name="md_image_blur" extra="true">
+            <path>${mdImageBlur}</path>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>10</zIndex>
+        </image>
+
+
+        <image name="md_image">
+            <origin>0 0</origin>
+            <size>.45 .77</size>
+            <pos>0 0.01</pos>
+            <zIndex>-10</zIndex>
+        </image>
     </view>
 </theme>

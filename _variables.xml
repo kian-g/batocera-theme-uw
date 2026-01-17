@@ -10,5 +10,9 @@
         <purpleLight>4b2e83</purpleLight>
         <gold>ffc700</gold>
         <transparent>FFFFFF00</transparent>
+
+        <!-- Images -->
+        <mdImageBlurBlack>./_assets/md_image_blur_black.png</mdImageBlurBlack>
+        <mdImageBlurWhite>./_assets/md_image_blur_white.png</mdImageBlurWhite>
     </variables>
 </theme>
