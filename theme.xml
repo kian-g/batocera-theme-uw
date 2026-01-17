@@ -3,24 +3,49 @@
     <formatVersion>7</formatVersion>
     <include>./_variables.xml</include>
 
-    <!-- System Selection View (c64, pcengine, megadrive etc.) -->
     <view name="system">
         <carousel name="systemcarousel">
-            <type>vertical</type>
-            <pos>0 0</pos>
-            <size>0.2 1</size>
+            <type>horizontal</type>
+            <!-- Display Off Screen -->
+            <pos>2 2</pos>
+            <!-- <size>1 0.35</size>
+            <logoScale>1.2</logoScale>
+            <logoSize>0.22 0.22</logoSize>
+            <maxLogoCount>5</maxLogoCount>
+            <zIndex>50</zIndex> -->
         </carousel>
 
         <text name="systemInfo">
-            <fontPath>./_assets/fonts/BuenosAiresNf-RAJE.ttf</fontPath>
-            <color>FFFFFFFF</color>
-            <fontSize>0.25</fontSize>
+            <!-- Display Off Screen-->
+            <pos>2 2</pos>
         </text>
 
+        <image name="white_background" extra="true">
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./_assets/white.png</path>
+        </image>
+
+        <!-- <image name="uw_logo" extra="true">
+            <origin>.5 .5</origin>
+            <pos>.5 .5</pos>
+            <size>.8 .8</size>
+
+            <path>${uwLogo}</path>
+        </image> -->
+
+        <image name="background" extra="true">
+            <path>./_assets/systems/${system.theme}.png</path>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <size>1 1</size>
+            <zIndex>10</zIndex>
+            <defaultImage>${placeholder}</defaultImage>
+        </image>
     </view>
 
-    <!-- Detail View (Game Details, etc.)-->
-    <view name="detailed">
+    <view name="gamecarousel">
+
         <image name="background_color" extra="true">
             <path>./_assets/white.png</path>
             <pos>0 0</pos>
@@ -28,32 +53,47 @@
             <zIndex>-100</zIndex>
         </image>
 
-        <!-- Game List-->
-        <textlist name="gamelist">
-            <origin>1 0.5</origin>
-            <pos>0.98 0.5</pos>
-            <size>0.4 0.85</size>
 
+        <image name="md_marquee">
+            <origin>0 0.5</origin>
+            <pos>.05 .3</pos>
+            <scale>0.8</scale>
+        </image>
 
-            <selectedColor>${gold}</selectedColor>
-            <selectorColor>${transparent}</selectorColor>
-
-            <alignment>right</alignment>
-        </textlist>
-
-        <image name="md_image_blur" extra="true">
-            <path>${mdImageBlur}</path>
+        <image name="md_image">
+            <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
+            <zIndex>0</zIndex>
+        </image>
+
+        <image name="side_gradient" extra="true">
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>${sideGradient}</path>
+            <color>FFFFFFCA</color>
             <zIndex>10</zIndex>
         </image>
 
 
-        <image name="md_image">
-            <origin>0 0</origin>
-            <size>.45 .77</size>
-            <pos>0 0.01</pos>
-            <zIndex>-10</zIndex>
+        <!-- Prevent default behavior of showing.. hide off screen -->
+        <image name="md_fanart">
+            <pos>2 2</pos>
         </image>
+
+        <!-- Carousel at bottom of screen -->
+        <gamecarousel name="gamecarousel">
+            <type>horizontal</type>
+            <pos>0 0.68</pos>
+            <size>1 0.25</size>
+
+            <imageType>marquee</imageType>
+
+
+            <logoSize>0.24 0.95</logoSize>
+            <maxLogoCount>4</maxLogoCount>
+            <zIndex>50</zIndex>
+        </gamecarousel>
     </view>
+
 </theme>

@@ -12,7 +12,10 @@
         <transparent>FFFFFF00</transparent>
 
         <!-- Images -->
+        <uwLogo>./_assets/uw_logo.png</uwLogo>
         <mdImageBlurBlack>./_assets/md_image_blur_black.png</mdImageBlurBlack>
         <mdImageBlurWhite>./_assets/md_image_blur_white.png</mdImageBlurWhite>
+        <sideGradient>./_assets/side_gradient.png</sideGradient>
+        <placeholder>./_assets/placeholder.png</placeholder>
     </variables>
 </theme>
