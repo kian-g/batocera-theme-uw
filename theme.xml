@@ -21,7 +21,6 @@
         <text name="logoText">
             <pos>0 0.8</pos>
             <size>1 0.1</size>
-            <text>SYSTEM VIEW</text>
             <fontSize>0.05</fontSize>
             <color>FFFFFFFF</color>
             <alignment>center</alignment>
