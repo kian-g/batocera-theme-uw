@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
     <formatVersion>7</formatVersion>
     <view name="system">
         <image name="background"
-               extra="true">
-            <path>./_assets/white.png</path>
-            <pos>0 0</pos>
+            extra="true">
+            <path>./_assets/uw_logo.png</path>
+            <pos>.5 .5</pos>
             <size>1 1</size>
-            <color>FF0000FF</color>
+            <color>FFFFFFFF</color>
         </image>
         <carousel name="systemcarousel">
             <type>horizontal</type>
@@ -29,7 +29,7 @@
     </view>
     <view name="basic, detailed, video, grid">
         <image name="background"
-               extra="true">
+            extra="true">
             <path>./_assets/white.png</path>
             <pos>0 0</pos>
             <size>1 1</size>
