@@ -38,7 +38,7 @@
         </image>
 
         <sound name="bgsound">
-            <path>./_assets/audio/background.mp3</path>
+            <path>./_assets/audio/background_lucie.mp3</path>
         </sound>
     </view>
 
