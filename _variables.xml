@@ -8,8 +8,13 @@
         <!--Colors-->
         <purple>32006e</purple>
         <purpleLight>4b2e83</purpleLight>
-        <gold>ffc700</gold>
+        <spiritGold>ffc700</spiritGold>
+        <huskyGold>b7a57a</huskyGold>
         <transparent>FFFFFF00</transparent>
+
+        <!--Text
+        Colors-->
+        <gameListTextColor>FFFFFF</gameListTextColor>
 
         <!-- Images -->
         <uwLogo>./_assets/uw_logo.png</uwLogo>
@@ -19,5 +24,8 @@
         <placeholder>./_assets/placeholder.png</placeholder>
         <outlineBox>./_assets/outline_box.png</outlineBox>
         <verticalLine>./_assets/vertical_line.png</verticalLine>
+
+        <!--GIFS-->
+        <selectorImage>./_assets/animated.gif</selectorImage>
     </variables>
 </theme>
