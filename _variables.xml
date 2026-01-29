@@ -24,8 +24,8 @@
         <placeholder>./_assets/placeholder.png</placeholder>
         <outlineBox>./_assets/outline_box.png</outlineBox>
         <verticalLine>./_assets/vertical_line.png</verticalLine>
-
-        <!--GIFS-->
-        <selectorImage>./_assets/animated.gif</selectorImage>
+        <dogSelector>./DogSelector.png</dogSelector>
+        <dog>./Dog.png</dog>
+        <heart>./Heart.png</heart>
     </variables>
 </theme>

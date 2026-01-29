@@ -6,7 +6,6 @@
     <view name="system">
         <carousel name="systemcarousel">
             <type>horizontal</type>
-            <!-- Display Off Screen -->
             <pos>2 2</pos>
         </carousel>
 
@@ -25,28 +24,28 @@
             <origin>0.5 0.5</origin>
             <pos>0.5 0.5</pos>
             <size>1 1</size>
-            <zIndex>10</zIndex>
+            <zIndex>1</zIndex>
             <defaultImage>${placeholder}</defaultImage>
         </image>
     </view>
 
     <view name="detailed, video">
         <textlist name="gamelist">
-            <selectorImagePath>${uwLogo}</selectorImagePath>
-            <selectorColor>FFFFFFFF</selectorColor>
-            <selectorHeight>0.05</selectorHeight>
-            <selectorWidth>0.05</selectorWidth>
-            <selectorOffsetY>-0.005</selectorOffsetY>
-            <selectorImageTile>false</selectorImageTile>
-            <horizontalMargin>0.06</horizontalMargin>
 
             <selectedColor>${huskyGold}</selectedColor>
             <primaryColor>${gameListTextColor}</primaryColor>
-            <origin>0 0.5</origin>
-            <pos>0.115 0.49</pos>
-            <size>0.36 0.83</size>
+            <origin>0 0</origin>
+            <pos>0.111 0.075</pos>
+            <size>0.29 0.83</size>
             <alignment>left</alignment>
             <fontSize>0.04</fontSize>
+
+            <!--Icons
+            in text list-->
+            <icon name="favorite">
+                <path>./Heart.png</path>
+            </icon>
+
         </textlist>
 
         <image name="gold_outline" extra="true">
@@ -65,11 +64,10 @@
             <zIndex>10</zIndex>
         </image>
 
-        <!-- Game image/video on right -->
         <video name="md_video">
-            <pos>0.655 0.35</pos>
-            <maxSize>0.45 0.50</maxSize>
-            <origin>0.5 0.5</origin>
+            <pos>0.878 0.1</pos>
+            <maxSize>0.19 0.25</maxSize>
+            <origin>1 0</origin>
             <delay>1.0</delay>
             <showSnapshotNoVideo>true</showSnapshotNoVideo>
             <showSnapshotDelay>true</showSnapshotDelay>
@@ -77,11 +75,155 @@
             <audio>false</audio>
         </video>
 
+        <image name="dog" extra="true">
+            <path>${dog}</path>
+            <maxSize>0.08 0.08</maxSize>
+            <origin>1 1</origin>
+            <pos>.9539 .84</pos>
+        </image>
         <image name="uw_logo" extra="true">
             <path>${uwLogo}</path>
             <maxSize>0.08 0.08</maxSize>
             <origin>1 1</origin>
             <pos>.983 .9155</pos>
         </image>
+
+        <text name="md_name">
+            <pos>0.552 0.102</pos>
+            <origin>0.5 0</origin>
+            <size>0.25 .035</size>
+            <color>FFFFFF</color>
+            <alignment>center</alignment>
+            <fontSize>0.05</fontSize>
+            <forceUppercase>true</forceUppercase>
+        </text>
+
+        <rating name="md_rating">
+            <origin>0.5 0</origin>
+            <pos>0.552 0.165</pos>
+            <size>0.20 0.04</size>
+            <filledPath>./_inc/images/star_filled.png</filledPath>
+            <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+            <alignment>center</alignment>
+        </rating>
+
+        <image name="md_favorite">
+            <path>${heart}</path>
+            <origin>0.5 0</origin>
+            <pos>0.552 0.165</pos>
+            <maxSize>0.04 0.04</maxSize>
+            <color>FFFFFF</color>
+        </image>
+
+        <text name="label_dev" extra="true">
+            <text>Developer:</text>
+            <pos>0.42 0.25</pos>
+            <size>0.10 0.03</size>
+            <color>${huskyGold}</color>
+            <fontSize>0.02</fontSize>
+            <alignment>right</alignment>
+        </text>
+
+        <text name="label_pub" extra="true">
+            <text>Publisher:</text>
+            <pos>0.42 0.29</pos>
+            <size>0.10 0.03</size>
+            <color>${huskyGold}</color>
+            <fontSize>0.02</fontSize>
+            <alignment>right</alignment>
+        </text>
+
+        <text name="label_genre" extra="true">
+            <text>Genre:</text>
+            <pos>0.42 0.33</pos>
+            <size>0.10 0.03</size>
+            <color>${huskyGold}</color>
+            <fontSize>0.02</fontSize>
+            <alignment>right</alignment>
+        </text>
+
+        <text name="label_players" extra="true">
+            <text>Players:</text>
+            <pos>0.68 0.25</pos>
+            <size>0.10 0.03</size>
+            <color>${huskyGold}</color>
+            <fontSize>0.02</fontSize>
+            <alignment>right</alignment>
+        </text>
+
+        <text name="label_release" extra="true">
+            <text>Released:</text>
+            <pos>0.68 0.29</pos>
+            <size>0.10 0.03</size>
+            <color>${huskyGold}</color>
+            <fontSize>0.02</fontSize>
+            <alignment>right</alignment>
+        </text>
+
+        <text name="label_played" extra="true">
+            <text>Played:</text>
+            <pos>0.68 0.33</pos>
+            <size>0.10 0.03</size>
+            <color>${huskyGold}</color>
+            <fontSize>0.02</fontSize>
+            <alignment>right</alignment>
+        </text>
+
+        <text name="md_developer">
+            <pos>0.53 0.25</pos>
+            <size>0.15 0.03</size>
+            <color>FFFFFFFF</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+        </text>
+
+        <text name="md_publisher">
+            <pos>0.53 0.29</pos>
+            <size>0.15 0.03</size>
+            <color>FFFFFFFF</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+        </text>
+
+        <text name="md_genre">
+            <pos>0.53 0.33</pos>
+            <size>0.15 0.03</size>
+            <color>FFFFFFFF</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+        </text>
+
+        <text name="md_players">
+            <pos>0.79 0.25</pos>
+            <size>0.10 0.03</size>
+            <color>FFFFFFFF</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+        </text>
+
+        <text name="md_releasedate">
+            <pos>0.79 0.29</pos>
+            <size>0.10 0.03</size>
+            <color>FFFFFFFF</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+        </text>
+
+        <text name="md_playcount">
+            <pos>0.79 0.33</pos>
+            <size>0.10 0.03</size>
+            <color>FFFFFFFF</color>
+            <fontSize>0.02</fontSize>
+            <alignment>left</alignment>
+        </text>
+
+        <text name="md_description">
+            <pos>0.43 0.45</pos>
+            <size>0.46 0.40</size>
+            <color>${gameListTextColor}</color>
+            <fontSize>0.022</fontSize>
+            <forceUppercase>false</forceUppercase>
+            <alignment>justify</alignment>
+        </text>
     </view>
 </theme>
