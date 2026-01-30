@@ -17,6 +17,7 @@
         <gameListTextColor>FFFFFF</gameListTextColor>
 
         <!-- Images -->
+        <!-- <selectorImage>./_inc/images/selector.png</selectorImage> -->
         <selectorImage>./_inc/images/selector.png</selectorImage>
         <whitePixel>./_inc/white.png</whitePixel>
         <metadataTextColor>${spiritGold}</metadataTextColor>

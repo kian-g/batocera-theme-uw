@@ -10,22 +10,25 @@
         </image>
     </view>
 
+
     <!-- Gamelist - DETAILED VIEW CORE -->
     <view name="detailed">
         <textlist name="gamelist">
-            <!-- <zIndex>10</zIndex> -->
+            <pos>0.0 0.5</pos>
             <origin>0 0.5</origin>
+            <size>0.29 0.845</size>
+            <lines>15</lines>
+            <horizontalMargin>0.03</horizontalMargin>
+
+            <selectorImagePath>${selectorImage}</selectorImagePath>
             <selectorColor>FFFFFF</selectorColor>
             <selectedColor>${huskyGold}</selectedColor>
-            <pos>0.0 0.5</pos>
-            <size>0.29 0.845</size>
-            <horizontalMargin>0.03</horizontalMargin>
-            <selectorImagePath>${selectorImage}</selectorImagePath>
+
             <primaryColor>FFFFFF</primaryColor>
             <fontSize>0.038</fontSize>
-            <forceUppercase>0</forceUppercase>
             <alignment>left</alignment>
-            <lines>19</lines>
+            <forceUppercase>0</forceUppercase>
+
             <glowColor>00000080</glowColor>
             <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
@@ -37,209 +40,267 @@
         <image name="mask" extra="true">
             <path>./_inc/images/mask.png</path>
             <zIndex>4</zIndex>
+
+            <pos>0.64140625 0.5564814814814815</pos>
             <origin>0.5 0.5</origin>
             <size>0.6171875 0.712962962962963</size>
-            <pos>0.64140625 0.5564814814814815</pos>
+
             <color>505050</color>
         </image>
 
-        <image name="md_thumbnail">
+        <!-- <image name="md_thumbnail">
             <linearSmooth>true</linearSmooth>
             <origin>0.5 0.5</origin>
-            <pos>0.85 0.36</pos>
+            <pos>0.83 0.355</pos>
             <maxSize>0.2 0.36</maxSize>
             <zIndex>5</zIndex>
             <reflexion>0.05 0</reflexion>
-        </image>
+        </image> -->
 
         <image name="md_image">
-            <linearSmooth>true</linearSmooth>
+            <zIndex>2</zIndex>
+
+            <pos>0.64140625 0.5</pos>
             <origin>0.5 0.5</origin>
             <size>0.6171875 0.712962962962963</size>
-            <pos>0.64140625 0.5</pos>
+
             <color>909090</color>
-            <zIndex>2</zIndex>
+            <linearSmooth>true</linearSmooth>
         </image>
 
         <text
             name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed, md_description, md_players, md_releasedate">
-            <color>${metadataTextColor}</color>
             <fontSize>0.025</fontSize>
+            <color>${metadataTextColor}</color>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
-        <text name="md_lbl_players">
-            <pos>0.38 0.52</pos>
-            <size>0.1 0.035</size>
-            <zIndex>5</zIndex>
+
+        <text name="md_name">
+            <pos>0.335 0.03</pos>
+            <origin>0 0</origin>
+            <size>0.61 0.05</size>
+
+            <alignment>center</alignment>
+            <fontSize>0.045</fontSize>
+            <color>FFFFFF</color>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+        </text>
+
+        <text name="md_lbl_players">
+            <zIndex>5</zIndex>
+
+            <pos>0.35 0.47</pos>
+            <size>0.1 0.035</size>
+
+            <glowColor>00000080</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
 
         <text name="md_players">
-            <pos>0.445 0.52</pos>
-            <size>0.0375 0.035</size>
             <zIndex>5</zIndex>
+
+            <pos>0.415 0.47</pos>
+            <size>0.0375 0.035</size>
+
             <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
 
         <text name="md_lbl_releasedate">
-            <pos>0.38 0.56</pos>
-            <size>0.12 0.035</size>
             <zIndex>5</zIndex>
+
+            <pos>0.35 0.51</pos>
+            <size>0.12 0.035</size>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
         <datetime name="md_releasedate">
-            <pos>0.445 0.56</pos>
-            <size>0.0750 0.035</size>
             <zIndex>5</zIndex>
+
+            <pos>0.415 0.51</pos>
+            <size>0.0750 0.035</size>
+
             <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </datetime>
 
         <text name="md_lbl_lastplayed">
-            <pos>.38 0.6</pos>
-            <size>0.12 0.035</size>
             <zIndex>5</zIndex>
+
+            <pos>.35 0.55</pos>
+            <size>0.12 0.035</size>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
+
         <datetime name="md_lastplayed">
-            <pos>.445 0.6</pos>
-            <size>0.12 0.035</size>
             <zIndex>5</zIndex>
+
+            <pos>.415 0.55</pos>
+            <size>0.12 0.035</size>
+
             <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </datetime>
 
         <text name="md_lbl_developer">
-            <pos>0.38 0.64</pos>
+            <zIndex>5</zIndex>
+
+            <pos>0.35 0.59</pos>
             <size>0.2 0.035</size>
-            <zIndex>5</zIndex>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
+
         <text name="md_developer">
-            <pos>0.445 0.64</pos>
-            <size>0.09 0.035</size>
-            <color>FFFFFF</color>
             <zIndex>5</zIndex>
+
+            <pos>0.415 0.59</pos>
+            <size>0.09 0.035</size>
+
+            <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
 
         <text name="md_lbl_genre">
-            <pos>0.55 0.56</pos>
+            <zIndex>5</zIndex>
+
+            <pos>0.52 0.51</pos>
             <size>0.12 0.035</size>
-            <zIndex>5</zIndex>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
+
         <text name="md_genre">
-            <pos>0.625 0.56</pos>
-            <size>0.2 0.035</size>
-            <color>FFFFFF</color>
             <zIndex>5</zIndex>
+
+            <pos>0.595 0.51</pos>
+            <size>0.2 0.035</size>
+
+            <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
 
         <text name="md_lbl_playcount">
-            <pos>0.55 0.6</pos>
+            <zIndex>5</zIndex>
+
+            <pos>0.52 0.55</pos>
             <size>0.2 0.035</size>
-            <zIndex>5</zIndex>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
+
         <text name="md_playcount">
-            <pos>0.625 0.6</pos>
-            <size>0.0375 0.035</size>
-            <color>FFFFFF</color>
             <zIndex>5</zIndex>
+
+            <pos>0.595 0.55</pos>
+            <size>0.0375 0.035</size>
+
+            <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
 
         <text name="md_lbl_publisher">
-            <pos>0.55 0.64</pos>
+            <zIndex>5</zIndex>
+
+            <pos>0.52 0.59</pos>
             <size>0.2 0.035</size>
-            <zIndex>5</zIndex>
+
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
+
         <text name="md_publisher">
-            <pos>0.625 0.64</pos>
-            <size>0.09 0.035</size>
-            <color>FFFFFF</color>
             <zIndex>5</zIndex>
+
+            <pos>0.595 0.59</pos>
+            <size>0.09 0.035</size>
+
+            <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
-
-        <text name="logoText,md_lbl_rating">
-            <visible>false</visible>
-        </text>
-
-        <!-- <rating name="md_rating">
-            <pos>0.55 0.02</pos>
-            <filledPath>./_inc/images/star_filled.png</filledPath>
-            <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
-        </rating> -->
 
         <image name="line" extra="true">
             <path>${whitePixel}</path>
+            <zIndex>5</zIndex>
+
+            <pos>0.35 0.64</pos>
             <origin>0 1</origin>
+            <size>0.585 0.0035</size>
+
             <color>FFFFFF</color>
             <colorEnd>FFFFFF00</colorEnd>
             <gradientType>vertical</gradientType>
-            <pos>0.38 0.69</pos>
-            <size>0.55 0.0035</size>
-            <zIndex>5</zIndex>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </image>
 
         <text name="md_description">
-            <pos>0.38 0.69</pos>
-            <size>0.55 0.17</size>
-            <color>FFFFFF</color>
-            <alignment>left</alignment>
             <zIndex>5</zIndex>
+
+            <pos>0.35 0.645</pos>
+            <size>0.585 0.207</size>
+
+            <alignment>left</alignment>
+            <color>FFFFFF</color>
             <glowColor>00000080</glowColor>
-            <glowOffset>1</glowOffset>
             <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
+
+        <text name="md_lbl_rating">
+            <visible>false</visible>
+        </text>
+
+        <rating name="md_rating">
+            <visible>false</visible>
+            <pos>2 2</pos>
+        </rating>
     </view>
 
     <!-- Background layer for gamelist views -->
     <view name="detailed">
         <image name="overlay" extra="true">
-            <linearSmooth>true</linearSmooth>
-            <origin>1 0.5</origin>
-            <pos>1 0.5</pos>
-            <maxSize>1 99</maxSize>
             <zIndex>7</zIndex>
+
+            <pos>1 0.5</pos>
+            <origin>1 0.5</origin>
+            <maxSize>1 99</maxSize>
+
+            <linearSmooth>true</linearSmooth>
         </image>
     </view>
 </theme>
