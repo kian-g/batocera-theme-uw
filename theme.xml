@@ -3,6 +3,31 @@
     <formatVersion>7</formatVersion>
     <include>./_variables.xml</include>
 
+    <view name="system">
+        <image name="background" extra="true">
+            <path>./_inc/images/system_bg.png</path>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <zIndex>1</zIndex>
+        </image>
+
+        <carousel name="systemcarousel">
+            <pos>2 2</pos>
+            <origin>0 0</origin>
+            <size>0 0</size>
+            <visible>false</visible>
+        </carousel>
+
+        <text name="systemInfo">
+            <visible>false</visible>
+        </text>
+
+        <helpsystem name="help">
+            <visible>false</visible>
+        </helpsystem>
+    </view>
+
     <!-- Overlay for gamelist -->
     <view name="detailed">
         <image name="overlay" extra="true">
@@ -16,7 +41,7 @@
         <textlist name="gamelist">
             <pos>0.0 0.5</pos>
             <origin>0 0.5</origin>
-            <size>0.29 0.845</size>
+            <size>0.29 0.8</size>
             <lines>15</lines>
             <horizontalMargin>0.03</horizontalMargin>
 
